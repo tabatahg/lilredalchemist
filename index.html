@@ -1,15 +1,61 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-    <meta charset="Uutf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LilRedAlchemist</title>
+    <!--Sets the page to follow the screen width of the device and sets the zoom level when first loaded by browser-->
+    <title>Home of Many Cats</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+
+    <!--Make it Look Pretty Here-->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <!--    <link rel="stylesheet" href="/CSS/bootstrap.css">-->
+    <link rel="stylesheet" href="/CSS/main.css">
+    <!--Now It's Pretty-->
+
+    <!--Icons and Shit-->
+    <script src="https://kit.fontawesome.com/106dfcdb2b.js"></script>
+    <!--End of Icons and Shit-->
+
+    <!--NavBar Starts-->
+    <script src="JavaScript/mainsidebar.js"></script>
+    <!--NavBar Ends-->
 </head>
 
 <body>
-    <p>TEXT</p>
+    <div id="sidebar">
+    </div>
+
+    <script>
+        $(function () {
+            $("#sidebar").load("HTML/sidebar.html");
+        });
+    </script>
+
+    <div class="home">
+        <h1 class="coming-soon">
+            Coming Soon
+        </h1>
+
+        <h2 class="title">Home of Many Cats</h2>
+        <h2 class="subtitle">A Landing Page for LilRedAlchemist</h2>
+        <p>
+            This is the landing page for LilRedAlchemist and all the things she does and all the places she can be
+            found online
+        </p>
+        <p>
+            Welcome!
+        </p>
+    </div>
 </body>
 
 </html>
