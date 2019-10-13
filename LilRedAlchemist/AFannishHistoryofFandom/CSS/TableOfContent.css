@@ -1,0 +1,30 @@
+#toc_videos {
+    background: #CF73A7 none repeat scroll 0 0;
+    border: 1px solid #ffffff;
+    display: table;
+    font-size:  90%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_video_title {
+    font-weight: 900;
+    text-align: center;
+}
+
+#toc_videos li, 
+#toc_videos ul, 
+#toc_videos ul li{
+    list-style: outside none none !important;
+}
+
+#toc_transcripts {
+    background: #E3A4C8 none repeat scroll 0 0;
+    border: 1px solid #ffffff;
+    display: table;
+    font-size:  90%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}

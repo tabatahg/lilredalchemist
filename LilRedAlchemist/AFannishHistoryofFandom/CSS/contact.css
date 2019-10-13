@@ -1,0 +1,94 @@
+body {
+    background-color: #E3A4C8;
+    font-family: "Raleway";
+    font-size: 2em;
+    font-weight: 700;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 300px;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+.contact {
+    background: #303030;
+    border-image: 0em;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text1],
+select,
+textarea {
+    width: 100%; /* Full width */
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 2px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: both
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text1],
+select,
+textarea {
+    width: 60em;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 2px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #89B432;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #DFF6B1;
+    color: #000000
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 1px;
+    background-color: #CF73A7;
+    padding: 20px;
+}
+
+
+.survey {
+    background: #303030;
+    border-image: 0em;
+
+}
+
+.around-the-web {
+    background: #303030;
+    border-image: 0em;
+}
+
+* {
+    border: 2px solid #FF0000;
+}
