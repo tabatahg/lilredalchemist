@@ -28,19 +28,19 @@ h2 {
 }
 
 h3 {
-
+    font-size-adjust: inherit;
 }
 
 h3 {
-
+    font-size-adjust: inherit
 }
 
 h5 {
-
+    font-size-adjust: inherit
 }
 
 h6 {
-
+    font-size-adjust: inherit
 }
 
 p {
@@ -50,13 +50,16 @@ p {
 
 /* The sidebar menu */
 .sidebar {
+    margin: o;
+    padding: 0;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: linear-gradient(to top left, #8A51A5, #CB5399, #F47B89);
+    overflow: auto;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -67,7 +70,7 @@ p {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.3s;
 }
@@ -77,9 +80,22 @@ p {
     color: #f1f1f1;
 }
 
+/* Active/current link */
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: linear-gradient(to top left, #8A51A5, #CB5399, #F47B89);
+    color: white;
+}
+
+
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 25px;
     font-size: 36px;
@@ -97,7 +113,7 @@ p {
 }
 
 .openbtn:hover {
-    background-color: #444;
+    background-color: linear-gradient(to top left, #8A51A5, #CB5399, #F47B89);
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -110,4 +126,114 @@ p {
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+}
+
+
+img {
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.picture-shadow,
+.picture-image {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.button,
+.social a {
+    transform-origin: center;
+    transition-duration: 100ms;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+.side {
+    max-height: 20rem;
+    max-width: 20rem;
+}
+
+.picture {
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.picture-shadow {
+    border-radius: 290486px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.24) 0%, rgba(189, 177, 177, 0.24) 0%);
+    position: absolute;
+    top: 10%;
+}
+
+.picture-image {
+    border-radius: 290486px;
+    position: absolute;
+}
+
+.about {
+    max-width: 26rem;
+}
+
+.name {
+    font-size: 2.25rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+    text-align: center
+}
+
+.job {
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.description {
+    font-size: 1.0rem;
+}
+
+@media screen and (max-width: 799px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+}
+    .side {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        flex-direction: row;
+        align-items: space-around;
+        justify-content: space-around;
+        /* justify-content: space-evenly; */
+        padding: 4rem;
+    }
+
+    .side {
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 20rem;
+        margin-left: 4rem;
+        width: 20rem;
+    }
+
+    .about {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+/* {
+    border: 1px solid red;
 }

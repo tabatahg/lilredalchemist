@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+<html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Sets the page to follow the screen width of the device and sets the zoom level when first loaded by browser-->
-    <title>Home of Many Cats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>House of Many Cats</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap"
@@ -15,10 +17,9 @@
         href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
 
-
     <!--Make it Look Pretty Here-->
     <link rel="stylesheet" href="CSS/main.css">
-    <!--    <link rel="stylesheet" href="/CSS/bootstrap.css">-->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/main.css">
     <!--Now It's Pretty-->
 
@@ -32,30 +33,62 @@
 </head>
 
 <body>
-    <div id="sidebar">
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="HTML/aboutme.html">About Me</a></li>
+            <li><a href="HTML/MCatter.html">Margaret Catter</a></li>
+            <li><a href="HTML/LRA.html">LilRedAlchemist</a></li>
+            <li><a href="HTML/maincontact.html">Contact</a></li>
+        </ul>
     </div>
 
-    <script>
-        $(function () {
-            $("#sidebar").load("HTML/sidebar.html");
-        });
-    </script>
+    <button class="openbtn" onclick="openNav()">☰</button>
 
-    <div class="home">
-        <h1 class="coming-soon">
-            Coming Soon
-        </h1>
+    <div id="main">
 
-        <h2 class="title">Home of Many Cats</h2>
-        <h2 class="subtitle">A Landing Page for LilRedAlchemist</h2>
-        <p>
-            This is the landing page for LilRedAlchemist and all the things she does and all the places she can be
-            found online
-        </p>
-        <p>
-            Welcome!
-        </p>
+        <div class="home">
+            <h1 class="coming-soon">
+                Coming Soon
+            </h1>
+
+            <h2 class="title">Home of Many Cats</h2>
+            <h2 class="subtitle">A Landing Page for LilRedAlchemist</h2>
+            <p class="cats">
+                <img src="images/20150519_234854.jpg" alt="A cat named Frisky" class="img-responsive" width="300"
+                    height="300">
+                <img src="images/20180325_190107.jpg" alt="A cat named Peggy" class="img-responsive" width="300"
+                    height="300">
+                <img src="images/August 16, 2017 at 1135AM (1).jpeg" class="img-responsive" alt="A cat named Jack"
+                    width="300" height="300">
+            </p>
+
+            <p>
+                This is the landing page for LilRedAlchemist and all the things she does and all the places she can
+                be
+                found online
+            </p>
+            <p>
+                <center>
+                    Welcome!
+                </center>
+            </p>
+
+        </div>
     </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
