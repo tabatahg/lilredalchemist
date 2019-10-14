@@ -10,64 +10,60 @@
     <link rel="stylesheet" href="/CSS/contact.css">
     <link rel="stylesheet" href="/CSS/main.css">
     <script src="https://kit.fontawesome.com/106dfcdb2b.js"></script>
+    <!--NavBar Starts-->
+    <script src="/JavaScript/mainsidebar.js"></script>
+    <!--NavBar Ends-->
 </head>
 
 <body>
-    <div class="navbar">
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <ul>
-            <li navbar><a href="./Videos.html">Video Essays</a></li>
-            <li><a href="./Blog.html">Blog Post</a></li>
-            <li><a href="./About.html">About this Project</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="/index.html">Home</a> </li>
+            <li><a href="/HTML/aboutme.html">About Me</a></li>
+            <li><a href="/HTML/MCatter.html">Margaret Catter</a></li>
+            <li><a href="/HTML/LRA.html">LilRedAlchemist</a></li>
+            <li><a href="/HTML/maincontact.html">Contact</a></li>
         </ul>
     </div>
 
-    <div class="contact">
+    <button class="openbtn" onclick="openNav()">☰</button>
 
-        <form action="action_page.php">
-    
-            <label for="fname">First Name</label>
-            <input type="text1" id="fname" name="firstname" placeholder="Your name..">
-            <label for="lname">Last Name</label>
-            <input type="text1" id="lname" name="lastname" placeholder="Your last name..">
-            <label for="country">Country</label>
-            <input type="text1" id="country" name="country" placeholder="I'm from...">
-    
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    
-            <input type="submit" value="Submit">
-    
-        </form>
-    </div>
-    
+
     <div class="survey">
-    
+
         <a href="http://bit.ly/2ZpVqOD">General Interest Survey</a>
-    
+
     </div>
-    
+
     <div class="around-the-web">
-    
+
         <span style="font-size: 1em;">
             <i class="fab fa-twitter"></i>
         </span>
-    
+
         <span style="font-size: 1em;">
             <i class="fab fa-discord"></i>
         </span>
-    
+
         <span style="font-size: 1em;">
             <i class="fab fa-youtube"></i>
         </span>
-    
+
         <span style="font-size: 1em;">
             <i class="fab fa-patreon"></i>
         </span>
-    
+
     </div>
 
-
+    <div class="navbar">
+        <ul>
+            <li navbar><a href="/LilRedAlchemist/AFannishHistoryofFandom/HTML/FHoFVideos.html">Video Essays</a></li>
+            <li><a href="/LilRedAlchemist/AFannishHistoryofFandom/HTML/Blog.html">Blog Post</a></li>
+            <li><a href="/LilRedAlchemist/AFannishHistoryofFandom/HTML/About.html">About this Project</a></li>
+            <li><a href="/LilRedAlchemist/AFannishHistoryofFandom/HTML/Contact.html">Contact</a></li>
+        </ul>
+    </div>
 </body>
 
 </html>

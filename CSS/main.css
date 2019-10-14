@@ -135,6 +135,15 @@ img {
     border-radius: 50%;
 }
 
+.bobbie {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    object-position: 30% 0;
+}
+
 .picture-shadow,
 .picture-image {
     display: block;
@@ -233,6 +242,7 @@ img {
         flex-shrink: 1;
     }
 }
+
 
 /* {
     border: 1px solid red;

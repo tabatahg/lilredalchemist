@@ -1,6 +1,6 @@
 html {
     background-color: #7C134E;
-    background-image: linear-gradient(to top left, #E3A4C8, #CF73A7, #B24984);
+    background: linear-gradient(to top left, #E3A4C8, #CF73A7, #B24984);
     font-family: 'Roboto', sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -24,13 +24,80 @@ p {
     margin-bottom: 15px;
 }
 
+/* The sidebar menu */
+.sidebar {
+    margin: o;
+    padding: 0;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: linear-gradient(to top left, #8A51A5, #CB5399, #F47B89);
+    overflow: auto;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: linear-gradient(to top left, #8A51A5, #CB5399, #F47B89);
+    color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: fixed;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: linear-gradient(to top left, #8A51A5, #CB5399, #F47B89);
+}
+
 /* The navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #CF73A7;
-    position: fixed;
+    position: absolute;
     /* Set the navbar to fixed position */
-    top: 0;
+    bottom: 0;
     /* Position the navbar at the top of the page */
     width: 100%;
     /* Full width */
@@ -61,6 +128,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #CF73A7;
+    bottom: 0;
+    width: 100%;
 }
 
 li {
@@ -87,7 +156,6 @@ li a:hover {
     margin-bottom: 30px;
     text-align: center;
     -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: #ffffff;
 
 }
 
@@ -124,7 +192,3 @@ li a:hover {
     margin-top: 10px;
     /* Add a top margin to avoid content overlay */
 }
-
-* {
-    border: 1px solid #FF0000;
-}  
