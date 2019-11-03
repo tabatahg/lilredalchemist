@@ -102,6 +102,7 @@ p {
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
+    display: none;
     position: fixed;
     top: 0;
     right: 25px;
